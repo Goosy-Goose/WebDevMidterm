@@ -2,6 +2,8 @@
 .site-body-wrapper {
     position: relative;
     overflow: auto;
+    box-sizing: border-box;
+    
 }
 
 .site-header {
@@ -24,4 +26,8 @@
     height: 100%;
     width: 100%;
     background-color: rgb(255, 255, 255);
+}
+
+.header-menu {
+
 }
