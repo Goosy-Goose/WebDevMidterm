@@ -1,13 +1,40 @@
+@font-face {
+    font-family: Codec-Warm-Heavy;
+    src: url(fonts/codec.warm-trial-heavy.ttf);
+}
+
+@font-face {
+    font-family: Codec-Warm-Bold;
+    src: url(fonts/codec.warm-trial-bold.ttf);
+}
+
+@font-face {
+    font-family: Code-Cold-News;
+    src: url(fonts/codec.cold-trial-news.ttf);
+}
+
+@font-face {
+    font-family: Codec-Cold-Thin;
+    src: url(fonts/codec.cold-trial-thin.ttf);
+}
+
+@font-face {
+    font-family: Codec-Cold-Light-Italic;
+    src: url(fonts/codec.cold-light-italic.ttf);
+}
+
 
 .site-body-wrapper {
-    position: relative;
-    overflow: auto;
+    /* position: relative; */
+    width: 100%;
     box-sizing: border-box;
-    
+    z-index: 0;
+    padding-top: 5rem;
 }
 
 .site-header {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     display: flex;
@@ -16,18 +43,64 @@
     width: 100%;
     align-items: center;
     justify-content: flex-end;
-    filter: drop-shadow(0px 10px 30px rgba(249, 230, 255, 0.477));
+    background-color: rgb(198, 251, 255);
+    filter: drop-shadow(0px 10px 30px rgba(0, 234, 255, 0.507));
 }
 
-.header-bg{
+.header-menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 2rem;
+}
+
+.header-menu-nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.header-menu-nav li{
+    float: left;
+}
+
+.header-menu-nav a{
+    display: block;
+    text-align: center;
+    padding-inline: 1.2rem;
+    text-decoration: none;
+    font-family: Codec-Warm-Bold;
+    font-size: 2.7rem;
+    color: rgb(125, 0, 243);
+}
+
+.header-menu-nav a:hover, #current-page{
+    font-size: 3.1rem;
+    font-family: Codec-Warm-Heavy;
+    color: rgb(238, 0, 255);
+}
+
+.woodwhis-promo{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    padding-top: 4rem;
+    z-index: 0;
     width: 100%;
-    background-color: rgb(255, 255, 255);
 }
 
-.header-menu {
+.woodwhis-promo img{
+    position: absolute;
+    
+}
 
+.woodwhis-logo {
+    width: 20%;
+    height: auto;
+    background-color: brown;
+}
+
+.woodwhis-logo:hover {
+    scale: 1.3;
+}
+
+.woodwhis-bg {
+    
 }
