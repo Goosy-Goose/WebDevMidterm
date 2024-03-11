@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: Code-Cold-News;
+    font-family: Codec-Cold-News;
     src: url(fonts/codec.cold-trial-news.ttf);
 }
 
@@ -23,13 +23,27 @@
     src: url(fonts/codec.cold-light-italic.ttf);
 }
 
-
-.site-body-wrapper {
-    /* position: relative; */
-    width: 100%;
+* {
     box-sizing: border-box;
-    z-index: 0;
-    padding-top: 5rem;
+}
+
+.mvg-logo {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    left: 2rem;
+    top: 2rem;
+
+    /* filter: drop-shadow(0px 10px 10px rgba(255, 140, 0, 0.235)); */
+}
+
+.mvg-logo img {
+    width: 13rem;
+    transition: all 0.3s;
+}
+
+.mvg-logo img:hover{
+    transform: scale(1.3) rotate(-5deg);
 }
 
 .site-header {
@@ -43,8 +57,8 @@
     width: 100%;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgb(198, 251, 255);
-    filter: drop-shadow(0px 10px 30px rgba(0, 234, 255, 0.507));
+    background-color: rgb(0, 0, 0);
+    filter: drop-shadow(0px 10px 30px rgba(0, 234, 255, 0.329));
 }
 
 .header-menu-nav {
@@ -79,28 +93,149 @@
     color: rgb(238, 0, 255);
 }
 
-.woodwhis-promo{
-    position: absolute;
-    padding-top: 4rem;
-    z-index: 0;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* =========================== HOME PAGE ===========================*/
+
+.hero-woodwhis {
     width: 100%;
+    padding-top: 4.3rem;
+    background-image: linear-gradient(rgba(43, 216, 255, 0.162), rgba(248, 34, 255, 0.151)), url("game-images/Woodland-Whispers-Splash.png");
+    height: 50rem;
+    background-position: center;
+    background-position-y: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* filter: drop-shadow(0px 10px 30px rgba(81, 230, 101, 0.329)); */
 }
 
-.woodwhis-promo img{
-    position: absolute;
+.hero-woodwhis > a {
+    transition: 0.3s transform;
+}
+
+.hero-woodwhis > a:hover {
+    transform: scale(1.15);
+}
+
+#play-now {
+    margin-top: 2rem;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+    height: 3rem; 
+    border-radius: 10px;
+    background-color: black;
+    font-family: Codec-Cold-News;
+    font-size: 30px;
+}
+#play-now a {
+    text-decoration: none;
+    color: beige;
+}
+
+
+#ww-title {
+    width: 600px;
+}
+
+.welcome-wrapper {
+    margin-inline: 17%;
+    margin-block: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: Codec-Cold-News;
+}
+
+.welcome-wrapper img {
+    padding-right: 20px;
+}
+
+.welcome-wrapper h1 {
+    line-height: 200%;
+    color: white;
+}
+
+.welcome-wrapper p {
+    padding-inline-start: 30px;
+    color: white;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+.welcome-wrapper > div > div {
+    display: flex;
+}
+
+.welcome-wrapper #we-are-txt {
+    font-family: Codec-Warm-Bold;
+    font-size: 40px;
+    color: orange;
+}
+
+.welcome-wrapper #mvg-txt {
+    font-family: Codec-Warm-Heavy;
+    font-size: 60px;
+    color: aqua;
+}
+
+.welcome-wrapper #read-more-txt {
+    padding-inline-start: 30px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s transform;
+    transition: color 0.3 ease;
     
 }
-
-.woodwhis-logo {
-    width: 20%;
-    height: auto;
-    background-color: brown;
+.welcome-wrapper #read-more-txt:hover {
+    transform: scale(1.2);
+    color: aqua;
 }
 
-.woodwhis-logo:hover {
-    scale: 1.3;
+/* =========================== END HOME PAGE =========================== */
+
+
+
+
+/* =========================== FOOTER =========================== */
+
+.site-footer{
+    background-color: rgb(137, 27, 93);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: Codec-Cold-Thin;
 }
 
-.woodwhis-bg {
-    
+.site-footer p {
+    font-family: sans-serif;
 }
+
+.site-footer > div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+.site-footer img {
+    width: 70px;
+}
+
+
