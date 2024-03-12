@@ -210,25 +210,248 @@ body {
     color: aqua;
 }
 
+#play-our-games {
+    font-family: Codec-Warm-Bold;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+}
+
+#hr-home-games {
+    width: 300px;
+    height:5px;
+    border-width:0;
+    background-color:#00A4BD;
+    border-radius: 5px;
+}
+
+.home-games-wrapper {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 13%;
+}
+
+.home-games-wrapper .game-organizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.home-games-wrapper .game-organizer img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.home-games-wrapper .game-organizer img:hover {
+    transform: scale(1.05);
+}
+
+.home-games-wrapper .game-organizer h1 {
+    font-family: Codec-Warm-Bold;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.home-games-wrapper a {
+    text-decoration: none;
+}
+
+
 /* =========================== END HOME PAGE =========================== */
+
+
+/* =========================== ABOUT PAGE =========================== */
+
+.hero-about-us {
+    /* margin-top: 5rem; */
+    background-image: url(site-decorations/mango_impact.png);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.about-wrapper {
+    padding-block: 5rem;
+    background-image: url(site-decorations/hot_pink_splatters.png);
+    background-color: rgba(0,0,0,0.86);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: top;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Codec-Cold-News;
+}
+
+.about-us h1 {
+    padding-top: 3rem;
+    font-family: Codec-Warm-Heavy;
+    font-size: 70px;
+    color: aqua;
+}
+
+.about-us p {
+    padding-inline: 17%;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+/* =========================== END ABOUT PAGE =========================== */
+
+
+
+
+/* =========================== GAMES PAGE =========================== */
+
+.games-wrapper {
+    padding-block: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 13%;
+}
+
+.games-wrapper .game-organizer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.games-wrapper .game-organizer a{
+    display: flex;
+    text-decoration: none;
+    width: 40%;
+    margin-block: 10px;
+    margin-inline: 30px;
+}
+
+
+.games-wrapper .game-organizer img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 15px;
+    transition: all 0.3s;
+    
+}
+
+.games-wrapper .game-organizer img:hover {
+    transform: scale(1.05);
+}
+
+.games-wrapper .game-organizer div {
+    width: 59%;
+}
+
+.games-wrapper .game-organizer .left-text{
+    text-align: right;
+}
+
+.games-wrapper .game-organizer h1 {
+    font-family: Codec-Warm-Bold;
+    color: aqua;
+    margin-bottom: 3rem;
+    font-size: 40px;
+}
+.games-wrapper .game-organizer p {
+    font-family: Codec-Cold-News;
+    color: white;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.games-wrapper .game-organizer h1 + p, .games-wrapper .game-organizer a + p{
+    color: rgb(255, 255, 202);
+}
+
+
+
+
+/* =========================== END GAMES PAGE =========================== */
+
+
+.game-summary {
+    padding-inline: 17%;
+}
+
+.game-summary hr {
+    margin-top: 3rem;
+    height: 5px;
+    border-width: 0;
+    background-color: rgb(210, 210, 136);
+    border-radius: 3px;
+}
+
+.game-summary p {
+    padding-inline: 10%;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 24px;
+    line-height: 160%;
+    flex-direction: column;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+}
+
+.download-button h1:hover{
+    transform: scale(1.2)
+}
+
+.download-button h1 {
+    background-color: rgb(232, 232, 123);
+    font-family: Codec-Warm-Heavy;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.game-screenshots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.game-screenshots img {
+    width: 40%;
+    height: auto;
+    object-fit: scale-down;
+    margin-bottom: 1rem;
+}
 
 
 
 /* =========================== WOODLAND WHISPERS =========================== */
 
 .woodland-whispers-wrapper{
-    padding-inline: 17%;
-    padding-top: 5rem;
+    padding-block: 5rem;
     background-image: url(game-images/Woodland-Whispers-bg.png);
     background-color: rgba(0,0,0,0.2);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: top;
     font-family: Codec-Cold-News;
-
-
-    height: 700px;
 }
+
+
 
 .woodland-whispers-wrapper :first-child {
     display: flex;
@@ -236,22 +459,78 @@ body {
     margin-top: 2rem;
 }
 
-.woodland-whispers-wrapper hr {
-    height: 5px;
-    border-width: 0;
-    background-color: rgb(210, 210, 136);
-    border-radius: 3px;
-    
-}
 
-.woodland-whispers-wrapper p {
-    padding-inline: 10%;
-    color: white;
-    font-size: 24px;
-    line-height: 160%;
+
+.woodland-whispers-wrapper #ww-tagline {
+    flex-wrap: wrap;
+    color: rgb(252, 255, 74);
+    font-size: 30px;
 }
 
 /* =========================== END WOODLAND WHISPERS =========================== */
+
+
+
+
+/* =========================== POP OR PERISH =========================== */
+#poppy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+}
+
+#paris {
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: auto;
+}
+
+
+#pop-title {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#pop-title img{
+    height: 450px;
+    width: auto;
+}
+
+.pop-or-perish-wrapper{
+    /* padding-inline: 17%; */
+    padding-block: 5rem;
+    background-color: rgb(26, 41, 57);
+    font-family: Codec-Cold-News;
+}
+
+.pop-or-perish-wrapper :first-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pop-or-perish-wrapper #pop-tagline {
+    text-align: center;
+    color: rgb(63, 255, 169);
+    font-size: 30px;
+}
+
+.pop-or-perish-wrapper .game-screenshots {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================== END POP OR PERISH =========================== */
 
 
 
